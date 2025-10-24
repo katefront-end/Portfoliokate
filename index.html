@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1761325309152"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1761325309152">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" data-fls-header-scroll="" class="header">
+				<div class="header__container">
+					<a href="#" class="header__logo">Portfolio Kate</a>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#about" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#services" class="menu__link">Services</a>
+								</li>
+								<li class="menu__item">
+									<a href="#projects" class="menu__link">Projects</a>
+								</li>
+								<li class="menu__item">
+									<a href="#blog" class="menu__link">Blog</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link" data-fls-popup-link="popup">Hire me</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page page--home">
+				<div data-fls-popup="popup" aria-hidden="true" class="popup">
+					<div data-fls-popup-wrapper="" class="popup__wrapper">
+						<div data-fls-popup-body="" class="popup__body">
+							<button data-fls-popup-close="" type="button" class="popup__close">
+								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+									<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								</svg>
+							</button>
+							<div class="popup__content">
+								<form action="#" class="popup-form">
+									<input type="text" name="userName" class="popup-form__field popup-form__field--name" placeholder="Your name">
+									<input type="email" name="userName" class="popup-form__field popup-form__field--email" placeholder="Your e-mail">
+									<textarea class="popup-form__field popup-form__field--message" name="userMessage" placeholder="Your message"></textarea>
+									<button class="popup-form__submit" type="submit">Send</button>
+								</form>
+								<div class="popup__info">
+									<a href="" class="popup__link">e-mail: info@mywebsite.email</a>
+									<a href="" class="popup__link">тел: +380</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section data-fls-hero="" data-fls-title="" class="hero">
+					<div class="hero__container" data-fls-parallax-parent="">
+						<div class="hero__content">
+							<h1 class="hero__title title title-h1" data-fls-parallax="" data-axis="v" data-fls-parallax-direction="-1" data-fls-parallax-coefficient="12">
+								<span>I build websites</span>
+								that empower and connect people.
+							</h1>
+							<p class="hero__text" data-fls-parallax="" data-axis="v" data-fls-parallax-direction="-1" data-fls-parallax-coefficient="18">
+								Hi! I’m Katya, a front-end developer based in Ukraine. I create fast, modern, and responsive web experiences for startups and creative teams.
+							</p>
+							<div class="hero__buttons" data-fls-parallax="" data-axis="v" data-fls-parallax-direction="-1" data-fls-parallax-coefficient="25">
+								<a href="#" data-fls-popup-link="popup" class="hero__call">Hire me</a>
+								<!-- <a href="#" class="hero__download">Download CV</a> -->
+							</div>
+						</div>
+						<div class="hero__img" data-fls-parallax="" data-axis="v" data-fls-parallax-direction="-1" data-fls-parallax-coefficient="16">
+							<picture>
+								<img alt="" src="./assets/img/hero/photo98.webp">
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section data-fls-trusted="" class="trusted">
+					<div class="trusted__container">
+						<h3 data-fls-watcher="" class="trusted__title title title-h3">Trusted by</h3>
+						<div class="trusted__row">
+							<div data-fls-watcher="" class="trusted__item">
+								<picture>
+									<img alt="" src="./assets/img/trusted/trusted-01.webp">
+								</picture>
+							</div>
+							<div data-fls-watcher="" class="trusted__item">
+								<img src="./assets/img/trusted/trusted-02.svg" alt="">
+							</div>
+							<div data-fls-watcher="" class="trusted__item">
+								<img src="./assets/img/trusted/trusted-03.svg" alt="">
+							</div>
+							<div data-fls-watcher="" class="trusted__item">
+								<img src="./assets/img/trusted/trusted-04.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-services="" class="services" id="services">
+					<div class="services__container">
+						<div data-fls-watcher="" data-fls-blockheader="" data-fls-title="" class="services__blockheader blockheader">
+							<h5 class="services__subtitle blockheader__subtitle title title-h5 title-h5--red">SERVICES</h5>
+							<h2 class="services__title blockheader__title title title-h2">Code that brings ideas to life, one project at a time..</h2>
+						</div>
+						<div class="services__row">
+							<div class="services__item card-services" data-fls-watcher="">
+								<div class="card-services__icon --icon-semi-circle"></div>
+								<h4 class="card-services__title title title-h4">What I can do for you</h4>
+								<p class="card-services__text">
+									Fast, modern, and responsive websites that users enjoy.
+                    Here’s what I offer:
+								</p>
+								<ul class="card-services__list">
+									<li class="card-services__item">Website Development</li>
+									<li class="card-services__item">Web App Creation</li>
+									<li class="card-services__item">UI/UX Implementation</li>
+								</ul>
+							</div>
+							<div class="services__item card-services" data-fls-watcher="">
+								<div class="card-services__icon --icon-triangle"></div>
+								<h4 class="card-services__title title title-h4">Applications I’m fluent in</h4>
+								<p class="card-services__text">
+									Every developer needs the right tools.
+                    Here’s what I work with:
+								</p>
+								<ul class="card-services__list">
+									<li class="card-services__item">HTML / CSS / JavaScript</li>
+									<li class="card-services__item">React</li>
+									<li class="card-services__item">Git & Figma</li>
+								</ul>
+							</div>
+							<div class="services__item card-services" data-fls-watcher="">
+								<div class="card-services__icon --icon-people"></div>
+								<h4 class="card-services__title title title-h4">What you can expect</h4>
+								<p class="card-services__text">I build websites that are not only beautiful but fast and reliable.</p>
+								<ul class="card-services__list">
+									<li class="card-services__item">Clean and responsive</li>
+									<li class="card-services__item">SEO-friendly</li>
+									<li class="card-services__item">Easy to maintain</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-projects="" class="projects" id="projects">
+					<div class="projects__container">
+						<div class="projects__header">
+							<div data-fls-watcher="" data-fls-blockheader="" data-fls-title="" class="projects__blockheader blockheader">
+								<h5 class="projects__subtitle blockheader__subtitle title title-h5 title-h5--purple">PROJECTS</h5>
+								<h2 class="projects__title blockheader__title title title-h2">My works</h2>
+							</div>
+							<!-- <button data-fls-watcher class="projects__button">View all projects</button> -->
+						</div>
+						<div data-fls-slider="" class="projects__slider swiper">
+							<div class="projects__wrapper swiper-wrapper">
+								<div data-fls-watcher="" class="projects__slide swiper-slide">
+									<div class="projects__item card-projects">
+										<div class="card-projects__image">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/projects/antools-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/projects/antools-1200.webp" type="image/webp">
+												<img alt="" src="./assets/img/projects/antools.webp">
+											</picture>
+										</div>
+										<div class="card-projects__content">
+											<p class="card-projects__caption">website</p>
+											<h4 class="card-projects__title title title-h4">Antools</h4>
+											<a href="https://katefront-end.github.io/antools/" target="_blank" class="card-projects__link">View Project</a>
+										</div>
+									</div>
+								</div>
+								<div data-fls-watcher="" class="projects__slide swiper-slide">
+									<div class="projects__item card-projects">
+										<div class="card-projects__image">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/projects/whirl-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/projects/whirl-1200.webp" type="image/webp">
+												<img alt="" src="./assets/img/projects/whirl.webp">
+											</picture>
+										</div>
+										<div class="card-projects__content">
+											<p class="card-projects__caption">website</p>
+											<h4 class="card-projects__title title title-h4">Whirl</h4>
+											<a href="https://katefront-end.github.io/while/" target="_blank" class="card-projects__link">View Project</a>
+										</div>
+									</div>
+								</div>
+								<div data-fls-watcher="" class="projects__slide swiper-slide">
+									<div class="projects__item card-projects">
+										<div class="card-projects__image">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/projects/decor-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/projects/decor-1200.webp" type="image/webp">
+												<img alt="" src="./assets/img/projects/decor.webp">
+											</picture>
+										</div>
+										<div class="card-projects__content">
+											<p class="card-projects__caption">website</p>
+											<h4 class="card-projects__title title title-h4">HouseDecor</h4>
+											<a href="https://katefront-end.github.io/decor/" target="_blank" class="card-projects__link">View Project</a>
+										</div>
+									</div>
+								</div>
+								<div data-fls-watcher="" class="projects__slide swiper-slide">
+									<div class="projects__item card-projects">
+										<div class="card-projects__image">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/projects/resideviz-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/projects/resideviz-1200.webp" type="image/webp">
+												<img alt="" src="./assets/img/projects/resideviz.webp">
+											</picture>
+										</div>
+										<div class="card-projects__content">
+											<p class="card-projects__caption">website</p>
+											<h4 class="card-projects__title title title-h4">Loyard</h4>
+											<a href="https://katefront-end.github.io/recidiviz/" target="_blank" class="card-projects__link">View Project</a>
+										</div>
+									</div>
+								</div>
+								<div data-fls-watcher="" class="projects__slide swiper-slide">
+									<div class="projects__item card-projects">
+										<div class="card-projects__image">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/projects/car-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/projects/car-1200.webp" type="image/webp">
+												<img alt="" src="./assets/img/projects/car.webp">
+											</picture>
+										</div>
+										<div class="card-projects__content">
+											<p class="card-projects__caption">website</p>
+											<h4 class="card-projects__title title title-h4">D&M Leasing</h4>
+											<a href="https://katefront-end.github.io/car/" target="_blank" class="card-projects__link">View Project</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-blog="" class="blog" id="blog">
+					<div data-fls-grid="" class="blog__container grid">
+						<div class="blog__left">
+							<div data-fls-watcher="" data-fls-blockheader="" data-fls-title="" class="blog__blockheader blockheader">
+								<h5 class="blog__subtitle blockheader__subtitle title title-h5 title-h5--orange">BLOGS</h5>
+								<h2 class="blog__title blockheader__title title title-h2">Latest Articles</h2>
+							</div>
+							<a data-fls-watcher="" href="#" class="blog__link">View all</a>
+						</div>
+						<div class="blog__right" data-fls-watcher="">
+							<div class="blog__item card-blog">
+								<div class="card-blog__date">April 22, 2025 · 4 min</div>
+								<h4 class="card-blog__title">
+									Top 5 tips for beginner developers
+                    Learn how to start your coding journey the right way and avoid common mistakes.
+								</h4>
+								<a href="#" class="card-blog__read">Read the article →</a>
+							</div>
+							<div class="blog__item card-blog">
+								<div class="card-blog__date">April 18, 2025 · 3 min</div>
+								<h4 class="card-blog__title">
+									Why responsive design still matters
+                    Discover why adaptability is key in modern web development.
+								</h4>
+								<a href="#" class="card-blog__read">Read the article →</a>
+							</div>
+							<div class="blog__item card-blog">
+								<div class="card-blog__date">April 12, 2025 · 5 min</div>
+								<h4 class="card-blog__title">
+									Best free tools for front-end developers
+                    A list of must-have tools that make your work faster and easier.
+								</h4>
+								<a href="#" class="card-blog__read">Read the article →</a>
+							</div>
+							<div class="blog__item card-blog">
+								<div class="card-blog__date">April 5, 2025 · 6 min</div>
+								<h4 class="card-blog__title">
+									How to create a smooth user experience
+                    Tips to make your websites intuitive, clean, and enjoyable.
+								</h4>
+								<a href="#" class="card-blog__read">Read the article →</a>
+							</div>
+							<div class="blog__item card-blog">
+								<div class="card-blog__date">April 1, 2025 · 4 min</div>
+								<h4 class="card-blog__title">
+									How to make websites load faster Simple techniques to improve performance
+                    and create a better user experience.
+								</h4>
+								<a href="#" class="card-blog__read">Read the article →</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="product" data-fls-product="">
+					<div class="product__container">
+						<div class="product__top">
+							<div class="product__left">
+								<div data-fls-watcher="" data-fls-blockheader="" data-fls-title="" class="product__blockheader blockheader">
+									<h5 class="product__subtitle blockheader__subtitle title title-h5 title-h5--red">Product Designer</h5>
+									<h2 class="product__title blockheader__title title title-h2">Here I am!</h2>
+								</div>
+							</div>
+							<p class="product__text" data-fls-watcher="">
+								Over the past few years, I’ve been diving deep into Front-End development. I’m from Ukraine and I love
+                creating modern, responsive websites that people enjoy using. My goal is to grow as a developer and make
+                the web more beautiful and functional.
+							</p>
+						</div>
+						<div class="product__row">
+							<div class="product__item">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/product/product1-600.webp" type="image/webp">
+									<img alt="" src="./assets/img/product/product1.webp">
+								</picture>
+							</div>
+							<div class="product__item">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/product/product2-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/product/product2-1200.webp" type="image/webp">
+									<img alt="" src="./assets/img/product/product2.webp">
+								</picture>
+							</div>
+							<div class="product__item">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/product/product3-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/product/product3-1200.webp" type="image/webp">
+									<img alt="" src="./assets/img/product/product3.webp">
+								</picture>
+							</div>
+							<div class="product__item">
+								<picture>
+									<img alt="" src="./assets/img/product/product4.webp">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-aboutme="" class="about-me" id="about">
+					<div class="about-me__container grid">
+						<div class="about-me__education education" data-fls-watcher="">
+							<h3 class="about-me__title title title-h3">📚 Education</h3>
+							<ul class="about-me__list">
+								<li class="about-me__item">
+									<div class="about-me__left">
+										<h4 class="about-me__item-title title title-h4">Odessa Secondary School No. 42</h4>
+										<p class="about-me__text">General Secondary Education</p>
+									</div>
+									<div class="about-me__right">
+										<button class="about-me__arrow --icon-arrow"></button>
+										<div class="about-me__date">2014 – 2025</div>
+									</div>
+								</li>
+								<li class="about-me__item">
+									<div class="about-me__left">
+										<h4 class="about-me__item-title title title-h4">University of London.</h4>
+										<p class="about-me__text">
+											Responsive Website Basics: Code with HTML, CSS,
+                            and JavaScript
+										</p>
+									</div>
+									<div class="about-me__right">
+										<button class="about-me__arrow --icon-arrow"></button>
+										<div class="about-me__date">Dec 30, 2024</div>
+									</div>
+								</li>
+								<li class="about-me__item">
+									<div class="about-me__left">
+										<h4 class="about-me__item-title title title-h4">Odessa I. I. Mechnikov National University</h4>
+										<p class="about-me__text">BSc in Management</p>
+									</div>
+									<div class="about-me__right">
+										<button class="about-me__arrow --icon-arrow"></button>
+										<div class="about-me__date">2025 – Now</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="about-me__experience experience" data-fls-watcher="">
+							<h3 class="about-me__title title title-h3">💼 Work Experience</h3>
+							<ul class="about-me__list experience__list">
+								<li class="about-me__item experience__item experience__item--rocket">
+									<div class="about-me__left">
+										<h4 class="about-me__item-title title title-h4">Freelance Projects</h4>
+										<p class="about-me__text">Frontend Developer</p>
+									</div>
+									<div class="about-me__right">
+										<button class="about-me__arrow --icon-arrow"></button>
+										<div class="about-me__date">June 2023 – Present</div>
+									</div>
+								</li>
+								<li class="about-me__item experience__item experience__item--music">
+									<div class="about-me__left">
+										<h4 class="about-me__item-title title title-h4">CreativeWeb Studio</h4>
+										<p class="about-me__text">Junior Web Developer</p>
+									</div>
+									<div class="about-me__right">
+										<button class="about-me__arrow --icon-arrow"></button>
+										<div class="about-me__date">2022 – 2023</div>
+									</div>
+								</li>
+								<li class="about-me__item experience__item experience__item--kingdom">
+									<div class="about-me__left">
+										<h4 class="about-me__item-title title title-h4">DigitalWave Agency</h4>
+										<p class="about-me__text">Intern Frontend Developer</p>
+									</div>
+									<div class="about-me__right">
+										<button class="about-me__arrow --icon-arrow"></button>
+										<div class="about-me__date">2021 – 2022</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section data-fls-testimonials="" class="testimonials">
+					<div class="testimonials__container">
+						<div data-fls-watcher="" data-fls-blockheader="" data-fls-title="" class="testimonials__blockheader blockheader">
+							<h5 class="testimonials__subtitle blockheader__subtitle title title-h5 title-h5--blue">TESTIMONIALS</h5>
+							<h2 class="testimonials__title blockheader__title title title-h2">Word on the street</h2>
+						</div>
+						<div class="testimonials__row grid">
+							<div class="testimonials__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/testimonials/testimonials-1-600.webp" type="image/webp">
+									<img alt="" src="./assets/img/testimonials/testimonials-1.webp">
+								</picture>
+							</div>
+							<div data-fls-slider="" class="testimonials__slider swiper">
+								<div class="testimonials__wrapper swiper-wrapper">
+									<div class="testimonials__slide swiper-slide">
+										<div class="testimonials__item">
+											<div class="testimonials__quote --icon-quotes"></div>
+											<p class="testimonials__item-title title title-h3">
+												“Katya created a website for our startup that works flawlessly on any device.
+                Her attention to detail and sense of style made the whole project stand out.”
+											</p>
+											<div class="testimonials__info">
+												<h5 class="testimonials__info-title title title-h5">Alex Brown</h5>
+												<p class="testimonials__position">Founder, BrightCode</p>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide swiper-slide">
+										<div class="testimonials__item">
+											<div class="testimonials__quote --icon-quotes"></div>
+											<p class="testimonials__item-title title title-h3">
+												"Working with Katya was a great experience.
+                She turned our ideas into a beautiful and fast web platform, and everything was ready ahead of
+                schedule.”
+											</p>
+											<div class="testimonials__info">
+												<h5 class="testimonials__info-title title title-h5">Maria Lopez</h5>
+												<p class="testimonials__position">Project Manager, NovaWeb</p>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide swiper-slide">
+										<div class="testimonials__item">
+											<div class="testimonials__quote --icon-quotes"></div>
+											<p class="testimonials__item-title title title-h3">
+												“Katya is a talented and responsible developer.
+                She quickly understood our needs and built a landing page that boosted our client engagement.”
+											</p>
+											<div class="testimonials__info">
+												<h5 class="testimonials__info-title title title-h5">Daniel Scott</h5>
+												<p class="testimonials__position">Marketing Lead, PixelPoint</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="testimonials__arrows">
+									<button class="testimonials__arrow testimonials__arrow--left --icon-mini-arrow"></button>
+									<button class="testimonials__arrow testimonials__arrow--right --icon-mini-arrow"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-questions="" class="questions">
+					<div class="questions__container">
+						<div data-fls-watcher="" data-fls-blockheader="" data-fls-title="" class="questions__blockheader blockheader">
+							<h5 class="questions__subtitle blockheader__subtitle title title-h5 title-h5--orange">FAQ</h5>
+							<h2 class="questions__title blockheader__title title title-h2">Frequently asked questions</h2>
+						</div>
+						<div data-fls-watcher="" data-fls-spollers="" class="spollers grid">
+							<details class="spollers__item">
+								<summary class="spollers__title title title-h4">What type of projects do you take on?</summary>
+								<div class="spollers__body">
+									I work on responsive websites, landing pages, and web components. My focus is on pixel-perfect layouts from
+          Figma, clean and maintainable code, and smooth interactions using HTML, SCSS, and JavaScript (ES6+). I also
+          create reusable UI components and optimize pages for performance and accessibility.
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title-h4">What is your hourly rate?</summary>
+								<div class="spollers__body">
+									My hourly rate depends on the complexity of the project. For small landing pages or single sections, I usually
+          work on a fixed-price basis. For larger projects or ongoing support, I offer flexible hourly pricing after
+          discussing the project scope.
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title-h4">What time zone do you work in?</summary>
+								<div class="spollers__body">
+									I’m based in Kyiv, Ukraine (UTC+2 / UTC+3). I’m flexible with time zones and can easily adapt to your schedule
+          for calls, updates, or feedback sessions.
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title-h4">What is the typical timeline for a project?</summary>
+								<div class="spollers__body">
+									A simple landing page usually takes 3–5 days, while a multi-page website can take 1–3 weeks depending on
+          complexity and animations. I always provide clear milestones and progress updates throughout development.
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title-h4">How do you charge for projects?</summary>
+								<div class="spollers__body">
+									I offer both fixed-price and hourly-based options. After reviewing the design and requirements, I estimate the
+          timeline and cost. Payments are typically split into stages — for example, 50% upfront and 50% after final
+          approval.
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title-h4">What does your development process look like?</summary>
+								<div class="spollers__body">
+									My process includes:
+									<br>
+									1. Reviewing the Figma design and preparing the structure.
+									<br>
+									2. Building adaptive, semantic HTML and SCSS structure (BEM methodology).
+									<br>
+									3. Adding interactivity with JavaScript (sliders, modals, tabs, etc.).
+									<br>
+									4. Testing on mobile and desktop devices.
+									<br>
+									5. Delivering final files or deploying to hosting/GitHub.
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title-h4">What metrics do you use to measure success?</summary>
+								<div class="spollers__body">
+									Success means a fast, accessible, and visually consistent website. I measure performance with Lighthouse
+          scores, check HTML validation, and ensure smooth interaction and animation flow. Clean code and client
+          satisfaction are always top priorities.
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title title title-h4">What if I need help after the project is complete?</summary>
+								<div class="spollers__body">
+									I provide post-launch support for small adjustments, bug fixes, or new feature additions. I’m also open to
+          long-term cooperation for website updates and technical improvements.
+								</div>
+							</details>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<h2 data-fls-watcher="" class="footer__title title title-h2">
+						Building creative code.
+						<span>I’m Katya, a front-end developer from Ukraine.</span>
+					</h2>
+					<div class="footer__row">
+						<div class="footer__info">
+							<div class="footer__text">Portfolio Kate</div>
+							<p class="footer__address">Based in Ukraine, working worldwide 🌍</p>
+							<a href="mailto:katya.dev@gmail.com" class="footer__email">katyadykova1503@gmail.com</a>
+						</div>
+						<ul class="footer__nav">
+							<li class="footer__item">
+								<a target="_blank" href="https://www.instagram.com/kate69038?igsh=ZDBianZmcWQzemVu&utm_source=qr" class="footer__link">Instagram</a>
+							</li>
+							<li class="footer__item">
+								<a href="https://github.com/" target="_blank" class="footer__link">GitHub</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__copyright">© 2025 Katya | Front-End Developer. All rights reserved.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
